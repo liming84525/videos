@@ -1,0 +1,57 @@
+{
+    "videoinfo": {
+        "details": [{
+            "cloudname": "sx001",
+            "videoname": "正负数的概念1",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx001.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/1.jpg"
+        }, {
+            "cloudname": "sx002",
+            "videoname": "正负数的概念2",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx002.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/2.jpg"
+        }, {
+            "cloudname": "sx003",
+            "videoname": "数轴",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx003.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/3.jpg"
+        }, {
+            "cloudname": "sx004",
+            "videoname": "相反数",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx004.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/4.jpg"
+        }, {
+            "cloudname": "sx005",
+            "videoname": "绝对值",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx005.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/5.jpg"
+        }, {
+            "cloudname": "sx006",
+            "videoname": "有理数的加法",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx006.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/6.jpg"
+        }, {
+            "cloudname": "sx007",
+            "videoname": "有理数的减法",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx007.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/7.jpg"
+        }, {
+            "cloudname": "sx008",
+            "videoname": "有理数的乘法",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx008.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/8.jpg"
+        }, {
+            "cloudname": "sx009",
+            "videoname": "有理数的除法",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx009.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/9.jpg"
+        }, {
+            "cloudname": "sx010",
+            "videoname": "乘方",
+            "videourl": "http://v.haibian.com/data/zixue_video/sx010.mp4",
+            "imageurl": "http://cdn.tv2stb.com/haitian/subject/Jmsm/10.jpg"
+        }],
+        "subject": "初中数学",
+        "subject_id": "pilFQwSZQajsZuMfUuE1u2ZaM2x4"
+    }
+}
