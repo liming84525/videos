@@ -55,10 +55,9 @@ func init() {
 }
 
 func main() {
-	for _, serie := range obj.S {
-		for _, video := range serie.Videos {
-			db.Save(&video)
-		}
-		db.Save(&serie)
+	serie := obj.S
+	for _, video := range serie.Videos {
+		db.Save(&video)
 	}
+	db.Save(&serie)
 }
