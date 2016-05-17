@@ -57,7 +57,7 @@ func init() {
 func main() {
 	serie := obj.S
 	for _, video := range serie.Videos {
-		db.Save(&video)
+		db.Create(&video)
 	}
-	db.Save(&serie)
+	db.Create(&serie)
 }
