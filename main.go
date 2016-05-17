@@ -10,17 +10,15 @@ import (
 )
 
 type Video struct {
-	orm.Model
-	Title    string `json:"videoname,omitempty"`
-	Id       string `json:"cloudname,omitempty"`
-	ImageUrl string `json:"imageurl,omitempty"`
-	VideoUrl string `json:"videourl,omitempty"`
+	Title    string `json:"videoname,omitempty" gorm:"type:varchar(100);not null"`
+	Id       string `json:"cloudname,omitempty" gorm:"index;type:varchar(100);not null"`
+	ImageUrl string `json:"imageurl,omitempty" gorm:"type:varchar(100);not null"`
+	VideoUrl string `json:"videourl,omitempty" gorm:"type:varchar(100);not null"`
 }
 
 type Series struct {
-	orm.Model
-	Id     string  `json:"subject_id,omitempty"`
-	Title  string  `json:"subject,omitempty"`
+	Id     string  `json:"subject_id,omitempty" gorm:"primary_key;type:varchar(100);not null"`
+	Title  string  `json:"subject,omitempty" gorm:"type:varchar(100);not null"`
 	Videos []Video `json:"details,omitempty"`
 }
 
@@ -34,7 +32,7 @@ var (
 func init() {
 	bytes, err := ioutil.ReadFile("video.json")
 	obj = struct {
-		S series `json:"videoinfo,omitempty"`
+		S Series `json:"videoinfo,omitempty"`
 	}{}
 	if err != nil {
 		log.Println(err)
@@ -48,8 +46,10 @@ func init() {
 		log.Println(err)
 	}
 	db.LogMode(true)
+	if !db.HasTable(&Video{}) {
+		db.CreateTable(&Video{})
+	}
 	if !db.HasTable(&Series{}) {
-		db.DropTableIfExists(&Series{})
 		db.CreateTable(&Series{})
 	}
 }
