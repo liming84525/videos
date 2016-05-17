@@ -55,6 +55,10 @@ func init() {
 }
 
 func main() {
-
-	log.Println(obj)
+	for _, serie := range obj.S {
+		for _, video := range serie.Videos {
+			db.Save(&video)
+		}
+		db.Save(&serie)
+	}
 }
